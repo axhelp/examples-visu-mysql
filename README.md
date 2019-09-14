@@ -5,6 +5,7 @@
 -  Windows 10 x64
 -  [Visu+ 2.50](https://www.phoenixcontact.com/online/portal/ru/?uri=pxc-oc-itemdetail:pid=2988544&&tab=5)
 -  [MySQL Installer 8.0.17](https://dev.mysql.com/downloads/installer/)
+-  [ODBC коннектор версии 5.3](http://dev.mysql.com/downloads/connector/odbc/5.3.html)
 
 ## MySQL 
 
