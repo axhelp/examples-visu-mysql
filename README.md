@@ -1,14 +1,10 @@
 # Visu+ MySQL Server
 
-[TOC]
-
 ## Prerequisites
 
 -  Windows 10 x64
--  [Visu+ 2.43](https://www.phoenixcontact.com/online/portal/ru/?uri=pxc-oc-itemdetail:pid=2988544&&tab=5)
--  [MySQL Installer 8.0.15](https://dev.mysql.com/downloads/installer/)
-
-**Внимание!** Данная инструкция не совместима с версиями **Visu+ 2.50 и 2.51.**
+-  [Visu+ 2.50](https://www.phoenixcontact.com/online/portal/ru/?uri=pxc-oc-itemdetail:pid=2988544&&tab=5)
+-  [MySQL Installer 8.0.17](https://dev.mysql.com/downloads/installer/)
 
 ## MySQL 
 
@@ -17,7 +13,7 @@
 ![image](images/4bc9cba53f7ca7b6f7356f2409a18ec8/image.png)
 ![image](images/384793b9d4cc5c6e5e860c84b9e216aa/image.png)
 
-**Внимание!** Даже на 64-битных системах Visu+ работает только с **32-битным ODBC коннектором**
+**Внимание!** Даже на 64-битных системах Visu+ работает только с **32-битным ODBC коннектором**. Рекомендуется установка [ODBC коннектора версии 5.3](http://dev.mysql.com/downloads/connector/odbc/5.3.html).
 
 ### Конфигурация MySQL Server
 
@@ -72,7 +68,10 @@ CREATE SCHEMA `visudb` DEFAULT CHARACTER SET utf8 ;
 ![image](images/955f0985a7cb827f6f4ce0c048012687/image.png)
 ![image](images/29393ee7822971f6417458439ebf6844/image.png)
 ![image](images/46dbc378ea9b1b6525481d8bee00c2ed/image.png)
-![image](images/12a4b15e3d9703952bed5ce861bce2f4/image.png)
+![image](images/12a4b15e3d9703952bed5ce861bce2f4/image.png)    
+
+**Внимание!** На этом этапе начиная с версии Visu+ 2.50 возможна ошибка загрузки ODBC коннектора (system error  182). Рекомендуется установка [ODBC коннектора версии 5.3](http://dev.mysql.com/downloads/connector/odbc/5.3.html).
+
 ![image](images/91d2298327ca5cc96636e64f4824e5a4/image.png)
 
 Нажатие на кнопку Create DB Table должно создать таблицы **alarms**, **sysmsgs** и **drivers** в базе данных.
